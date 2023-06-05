@@ -19,24 +19,18 @@ public class OrdenacaoMain {
 		array[7] = 12;
 		array[8] = 144;
 		array[9] = 2;
+		
+		if(ordenar.verificarOrdenacao(array)) {
+			System.out.println("Esta ordenado");
+		}else {
+			System.out.println("Nao esta ordenado");
+		}
 	
-		System.out.println("BubbleSort: ");
-		ordenar.bubbleSort(array);
+		ordenar.insertionSort2(array,1,5);
 		for(int num:array) {
 			System.out.println(num);
 		}
 		
-		System.out.println("SelectionSort: ");
-		ordenar.selectionSort(array);
-		for(int num:array) {
-			System.out.println(num);
-		}
-		
-		System.out.println("InsertionSort: ");
-		ordenar.insertionSort(array);
-		for(int num:array) {
-			System.out.println(num);
-		}
 	}
 
 }
